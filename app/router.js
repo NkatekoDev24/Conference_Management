@@ -6,4 +6,16 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function () {});
+Router.map(function () {
+  this.route('create-conference');
+  this.route('manage-conference');
+  this.route('register-attendees');
+  this.route('manage-speakers');
+  this.route('schedule-sessions');
+  this.route('generate-report');
+  this.route('manage-payment');
+  this.route('login');
+  this.route('register');
+  this.route('navbar');
+  this.route('conferences');
+});

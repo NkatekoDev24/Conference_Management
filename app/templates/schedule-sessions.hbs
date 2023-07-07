@@ -1,0 +1,27 @@
+<!-- app/templates/schedule-sessions.hbs -->
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <h2>Schedule Sessions</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Time</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each this.model.sessions as |session|}}
+          <tr>
+            <td>{{session.title}}</td>
+            <td>{{session.time}}</td>
+            <td>
+              <button class="btn btn-primary">Edit</button>
+              <button class="btn btn-danger">Remove</button>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
